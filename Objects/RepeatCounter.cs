@@ -12,7 +12,7 @@ namespace RepeatCounter.Objects
             string[] sentenceArray = sentence.Split(delim);
             string[] wordArray = word.Split(delim);
 
-            for(int i = 0; i < wordArray.Length; i++)
+            for(int i = 0; i < 1; i++)
             {
                 for(int j = 0; j < sentenceArray.Length; j++)
                 {
