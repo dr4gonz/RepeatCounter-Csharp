@@ -8,7 +8,7 @@ namespace RepeatCounter.Objects
         public int CountRepeats(string sentence, string word)
         {
             int wordCounter = 0;
-            char[] delim = new char[]{' ',',','.',':',';','"'};
+            char[] delim = new char[]{' ',',','.',':',';','"','?','!','~','<','>','/'};
             string[] sentenceArray = sentence.Split(delim);
             string[] wordArray = word.Split(delim);
 
