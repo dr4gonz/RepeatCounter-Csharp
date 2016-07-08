@@ -11,6 +11,11 @@ namespace RepeatCounter.Objects
             Get["/"] = _ => {
                 return View["index.cshtml"];
             };
+            Post["/"] = _ => {
+                RepeatCounter newCounter = new RepeatCounter();
+                var NumberOfWords = newCounter.CountRepeats(Request.Form["user-sentence"], Request.Form["user-word"]);
+                return View["result.cshtml", NumberOfWords];
+            };
         }
     }
 }
