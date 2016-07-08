@@ -7,16 +7,16 @@ namespace RepeatCounter.Objects
     {
         public int CountRepeats(string sentence, string word)
         {
-            int characterCounter = 0;
-            char[] sentenceArray = sentence.ToCharArray();
-            char[] wordArray = word.ToCharArray();
+            int wordCounter = 0;
+            string[] sentenceArray = sentence.Split(' ');
+            string[] wordArray = word.Split(' ');
             for(int i = 0; i < wordArray.Length; i++)
             {
                 for(int j = 0; j < sentenceArray.Length; j++)
                 {
                     if(wordArray[i] == sentenceArray[j])
                     {
-                        characterCounter++;
+                        wordCounter++;
                     }
                     else
                     {
@@ -24,7 +24,7 @@ namespace RepeatCounter.Objects
                     }
                 }
             }
-            return characterCounter;
+            return wordCounter;
         }
     }
 }
