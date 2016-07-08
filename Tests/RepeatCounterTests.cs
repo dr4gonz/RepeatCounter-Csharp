@@ -36,5 +36,11 @@ namespace RepeatCounter.Objects
             RepeatCounter newCounter = new RepeatCounter();
             Assert.Equal(3, newCounter.CountRepeats("one fox, two fox, three. fox, four!","fox"));
         }
+        [Fact]
+        public void EnterSentenceWithSpecialCharactersAndUpperCaseAndWord_Return_NumOfTimesItAppears()
+        {
+            RepeatCounter newCounter = new RepeatCounter();
+            Assert.Equal(3, newCounter.CountRepeats("one Fox, two FOX, three. fox, four!","fox"));
+        }
     }
 }

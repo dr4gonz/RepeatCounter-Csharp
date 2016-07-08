@@ -16,7 +16,7 @@ namespace RepeatCounter.Objects
             {
                 for(int j = 0; j < sentenceArray.Length; j++)
                 {
-                    if(wordArray[i] == sentenceArray[j])
+                    if(wordArray[i].ToLower() == sentenceArray[j].ToLower())
                     {
                         wordCounter++;
                     }
