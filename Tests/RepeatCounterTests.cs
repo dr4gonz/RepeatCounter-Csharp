@@ -18,5 +18,11 @@ namespace RepeatCounter.Objects
             RepeatCounter newCounter = new RepeatCounter();
             Assert.Equal(3, newCounter.CountRepeats("fluffy","f"));
         }
+        [Fact]
+        public void EnterSentenceAndSpecificCharacter_Return_NumOfTimesItAppears()
+        {
+            RepeatCounter newCounter = new RepeatCounter();
+            Assert.Equal(5, newCounter.CountRepeats("The quick fluffy fox jumped over the lazy ferret","f"));
+        }
     }
 }
