@@ -6,7 +6,7 @@ using Nancy.Owin;
 using Nancy.ViewEngines.Razor;
 
 
-namespace RepeatFinder
+namespace RepeatCounter.Objects
 {
   public class Startup
   {
